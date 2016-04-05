@@ -16,7 +16,7 @@ body {
 
 html {
     overflow: hidden;
-    background: #333 url(bg.png) no-repeat right bottom;
+    background: #333 url(../img/bg.png) no-repeat right bottom;
     background-attachment: fixed;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background: url(bg1.svg) no-repeat left top, url(bg2.svg) no-repeat right top;
+    background: url(../svg/bg1.svg) no-repeat left top, url(../svg/bg2.svg) no-repeat right top;
     background-color: transparent;
     background-attachment: fixed, fixed;
     -moz-background-size: auto 100%, auto 100%;
@@ -36,7 +36,7 @@ body {
 
 @media all and (min-height: 800px) {
     body {
-        background: transparent url(bg2.svg) no-repeat right top;
+        background: transparent url(../svg/bg2.svg) no-repeat right top;
         background-attachment: fixed;
         -moz-background-size: auto 75%;
         -o-background-size: auto 75%;
@@ -56,7 +56,7 @@ body {
 
 @media all and (max-device-width: 600px) {
     body {
-        background: transparent url(bg2.svg) no-repeat right -1px;
+        background: transparent url(../svg/bg2.svg) no-repeat right -1px;
         background-attachment: fixed;
         -moz-background-size: auto 75%;
         -o-background-size: auto 75%;
@@ -70,7 +70,7 @@ body {
     margin: 120px auto 200px auto;
     padding: 0 50px 20px 50px;
     width: 260px;
-    background: url(layer-middle.svg) repeat-y center top;
+    background: url(../svg/layer-middle.svg) repeat-y center top;
     -moz-background-size: 360px auto;
     -o-background-size: 360px auto;
     -webkit-background-size: 360px auto;
@@ -92,7 +92,7 @@ body {
     .page-wrapper::before {
         top: -600px;
         height: 600px;
-        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 567px;
+        background: url(../svg/hook3.svg) no-repeat center bottom, url(../svg/layer-frame.svg) no-repeat center 567px;
         -moz-background-size: 300px auto, 360px auto;
         -o-background-size: 300px auto, 360px auto;
         -webkit-background-size: 300px auto, 360px auto;
@@ -102,7 +102,7 @@ body {
     .page-wrapper::after {
         bottom: -33px;
         height: 33px;
-        background: transparent url(layer-frame.svg) no-repeat center bottom;
+        background: transparent url(../svg/layer-frame.svg) no-repeat center bottom;
         -moz-background-size: 360px auto;
         -o-background-size: 360px auto;
         -webkit-background-size: 360px auto;

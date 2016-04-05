@@ -34,7 +34,7 @@
     .main::before {
         top: -600px;
         height: 600px;
-        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 541px;
+        background: url(../svg/hook3.svg) no-repeat center bottom, url(../svg/layer-frame.svg) no-repeat center 541px;
         -moz-background-size: 520px auto, 640px auto;
         -o-background-size: 520px auto, 640px auto;
         -webkit-background-size: 520px auto, 640px auto;
@@ -48,7 +48,7 @@
         padding: 0 90px;
         width: 460px;
         height: auto;
-        background: url(layer-middle.svg) repeat-y center top;
+        background: url(../svg/layer-middle.svg) repeat-y center top;
         -moz-background-size: 640px auto;
         -o-background-size: 640px auto;
         -webkit-background-size: 640px auto;
@@ -58,7 +58,7 @@
         .main::after {
             bottom: -59px;
             height: 59px;
-            background: transparent url(layer-frame.svg) no-repeat center bottom;
+            background: transparent url(../svg/layer-frame.svg) no-repeat center bottom;
             -moz-background-size: 640px auto;
             -o-background-size: 640px auto;
             -webkit-background-size: 640px auto;
