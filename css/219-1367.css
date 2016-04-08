@@ -105,10 +105,10 @@ header {
     -o-transform: scale(0.8);
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-    -moz-transition: -moz-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;
-    -o-transition: -o-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;
-    -webkit-transition: -webkit-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;
-    transition: transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;
+    /*-moz-transition: -moz-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;*/
+    /*-o-transition: -o-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;*/
+    /*-webkit-transition: -webkit-transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;*/
+    /*transition: transform 1s 1s ease-out, top 1s ease-out, margin 1s 1s ease-out, left 1s 1s ease-out;*/
 }
 
     header::before,
@@ -142,13 +142,13 @@ header {
     }
 
     header:hover {
-        top: 260px;
-        margin: 0 0 0 -190px;
-        -moz-transform: rotateY(0) scale(1);
-        -ms-transform: scale(1);
-        -o-transform: rotateY(0) scale(1);
-        -webkit-transform: rotateY(0) scale(1);
-        transform: rotateY(0) scale(1);
+        /*top: 260px;*/
+        /*margin: 0 0 0 -190px;*/
+        /*-moz-transform: rotateY(0) scale(1);*/
+        /*-ms-transform: scale(1);*/
+        /*-o-transform: rotateY(0) scale(1);*/
+        /*-webkit-transform: rotateY(0) scale(1);*/
+        /*transform: rotateY(0) scale(1);*/
     }
 
 h1,
@@ -234,11 +234,11 @@ h2 {
         left: 50%;
         margin: 0 0 0 -490px;
         color: #fff;
-        -moz-transform: rotateY(0) scale(1);
+        -moz-transform: rotateY(0deg) scale(1);
         -ms-transform: scale(1);
-        -o-transform: rotateY(0) scale(1);
-        -webkit-transform: rotateY(0) scale(1);
-        transform: rotateY(0) scale(1);
+        -o-transform: rotateY(0deg) scale(1);
+        -webkit-transform: rotateY(0deg) scale(1);
+        transform: rotateY(0deg) scale(1);
     }
 
 .summary {
@@ -248,8 +248,7 @@ h2 {
     margin: 0 -500px 0 0;
     padding: 0;
     width: 450px;
-    background: url(../svg/layer-middle.svg) repeat-y center top;
-    background-color: transparent;
+    background: transparent url(../svg/layer-middle.svg) repeat-y center top;
     -moz-background-size: 450px auto;
     -o-background-size: 450px auto;
     -webkit-background-size: 450px auto;
@@ -327,28 +326,23 @@ h2 {
     .main div[role="article"] {
         position: absolute;
         top: 50%;
-        right: 40px;
         visibility: hidden;
-        margin-top: -230px;
-        padding: 55px 70px 50px 70px;
-        width: 460px;
-        height: 355px;
+        margin-top: -280px;
+        padding: 75px 70px 50px 70px;
+        width: 615px;
         background: url(../svg/layer.svg) no-repeat left center;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
-        -moz-transform: rotateY(-30deg);
-        -ms-transform: scale(1);
-        -o-transform: rotateY(-30deg);
-        -webkit-transform: rotateY(-30deg);
-        transform: rotateY(-30deg);
+        height: 450px;
+        background-size: auto 100%;
     }
 
         .main div[role="article"] p {
             position: absolute;
             padding: 10px 0;
-            width: 460px;
+            width: 615px;
             text-align: justify;
             -moz-hyphens: auto;
             -ms-hyphens: auto;
@@ -474,30 +468,30 @@ footer a::after {
     left: 0;
     margin-top: -280px;
     padding-bottom: 0;
-    -moz-transform: rotateY(40deg);
+    -moz-transform: rotateY(15deg);
     -ms-transform: translate(0, 0);
-    -o-transform: rotateY(40deg);
-    -webkit-transform: rotateY(40deg);
-    transform: rotateY(40deg);
+    -o-transform: rotateY(15deg);
+    -webkit-transform: rotateY(15deg);
+    transform: rotateY(15deg);
 }
 
 .main div[role="article"],
 .wrapper {
-    -moz-transition: -moz-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;
-    -o-transition: -o-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;
-    -webkit-transition: -webkit-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;
-    transition: transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;
+    /*-moz-transition: -moz-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;*/
+    /*-o-transition: -o-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;*/
+    /*-webkit-transition: -webkit-transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;*/
+    /*transition: transform 1s ease-out, left 1s ease-out, right 1s ease-out, top 1s 1s ease-out, margin-top 1s 1s ease-out;*/
 }
 
     .wrapper:hover {
-        top: 60%;
-        left: 0;
-        margin-top: -280px;
-        -moz-transform: rotateY(0);
-        -ms-transform: translate(0, 0);
-        -o-transform: rotateY(0);
-        -webkit-transform: rotateY(0);
-        transform: rotateY(0);
+        /*top: 60%;*/
+        /*left: 0;*/
+        /*margin-top: -280px;*/
+        /*-moz-transform: rotateY(0);*/
+        /*-ms-transform: translate(0, 0);*/
+        /*-o-transform: rotateY(0);*/
+        /*-webkit-transform: rotateY(0);*/
+        /*transform: rotateY(0);*/
     }
 
     .wrapper li,
@@ -559,6 +553,10 @@ footer a::after {
         width: 380px;
     }
 
+    .design-selection a {
+        color: rgba(255, 255, 255, 0.95);
+    }
+
         .design-selection li a.design-name {
             display: block;
             float: left;
@@ -582,7 +580,6 @@ footer a::after {
             background: -o-linear-gradient(top, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
             background: -webkit-linear-gradient(top,#111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
             background: linear-gradient(to bottom, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
-            color: rgba(255,255,255,.95);
             text-indent: 100%;
             -webkit-text-shadow: 0 0 4px black;
             text-shadow: 0 0 4px black;
