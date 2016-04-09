@@ -159,8 +159,8 @@ h2 {
 
 h1 {
     margin: 0;
-    padding: 40px 70px 10px 70px;
-    font-size: 60px;
+    padding: 20px 70px;
+    font-size: 40px;
     line-height: 60px;
 }
 
@@ -442,7 +442,7 @@ footer a::after {
 
 /** $sidebar */
 
-.sidebar {
+#left {
     -moz-perspective: 1000px;
     -ms-perspective: 1000px;
     -o-perspective: 1000px;
@@ -458,7 +458,7 @@ footer a::after {
     background: transparent;
 }
 
-    .sidebar:hover {
+    #left:hover {
         z-index: 4;
     }
 

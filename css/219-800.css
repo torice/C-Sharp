@@ -106,7 +106,7 @@ footer::after {
     background-size: 360px auto;
 }
 
-.sidebar {
+#left {
     float: left;
     clear: left;
 }

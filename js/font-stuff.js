@@ -1006,3 +1006,7 @@ window.Typekit.config = {
     if (mb = gb) mb = !!gb.I.__webfonttypekitmodule__;
     mb ? (gb.Y($), gb.load()) : ($.e = db, $.t = Wa($.e, $.Z), window.Typekit.addKit($));
 })(this, document);
+
+$(function () {
+    try{Typekit.load();}catch(e){};
+});
