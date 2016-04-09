@@ -56,3 +56,9 @@
 @import url("219-fix1.css") all and (min-width: 1367px);
 @import url("219-fix2.css") all and (min-width: 1367px);
 @import url("219-bg.css") all and (min-width: 400px);
+
+
+/* Not part of theme. */
+pre {
+    color: #33cc99;
+}

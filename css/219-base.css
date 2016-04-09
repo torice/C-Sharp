@@ -1,7 +1,7 @@
 /**
 * base
 *
-* The base styles apply to all browsers (including older browsers that don’t support media queries).
+* The base styles apply to all browsers (including older browsers that donï¿½t support media queries).
 */
 
 @-ms-viewport {
@@ -72,8 +72,8 @@ h3 {
 }
 
 h1 {
-    font-size: 46px;
-    line-height: 46px;
+    font-size: 2em;
+    line-height: 2em;
 }
 
 h2 {

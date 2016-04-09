@@ -29,15 +29,11 @@
 
 @keyframes marquee {
     0% {
-        text-indent: 100%;
-    }
-
-    80% {
-        text-indent: 0;
+        left: 0;
     }
 
     100% {
-        text-indent: -200%;
+        left: -100%;
     }
 }
 

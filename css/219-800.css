@@ -39,6 +39,8 @@
 
 header::before,
 header::after,
+#right-key-advance::before,
+#right-key-advance::after,
 .summary::before,
 .summary::after,
 .preamble::before,
@@ -66,7 +68,13 @@ footer::after {
     content: '';
 }
 
+#right-key-advance::before,
+#right-key-advance::after {
+    width: 100%;
+}
+
 header::before,
+#right-key-advance::before,
 .summary::before,
 .preamble::before,
 .design-selection::before,
@@ -86,7 +94,17 @@ footer::before {
     background-size: 300px auto, 360px auto;
 }
 
+#right-key-advance::before {
+    top: -633px;
+    height: 633px;
+    -moz-background-size: 80% auto, 100% auto;
+    -o-background-size: 80% auto, 100% auto;
+    -webkit-background-size: 80% auto, 100% auto;
+    background-size: 80% auto, 100% auto;
+}
+
 header::after,
+#right-key-advance::after,
 .summary::after,
 .preamble::after,
 .design-selection::after,
@@ -106,12 +124,22 @@ footer::after {
     background-size: 360px auto;
 }
 
+#right-key-advance::after {
+    bottom: -65px;
+    height: 65px;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
 #left {
     float: left;
     clear: left;
 }
 
 header,
+#right-key-advance,
 .summary,
 .preamble,
 .design-selection,
@@ -142,4 +170,11 @@ header,
 .requirements > * {
     padding: 15px 65px;
     width: 230px;
+}
+
+#right-key-advance {
+    width: 590px;
+    background-size: 100% auto;
+    padding: 0 80px;
+    margin: 70px 0;
 }

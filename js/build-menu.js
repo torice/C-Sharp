@@ -53,7 +53,7 @@ $(function() {
         },
         {
             presenter: presenters.SHELBY,
-            title: 'Comparison with Other Languages',
+            title: 'Comparisons',
             link: 'comparison.html'
         },
         {
@@ -107,7 +107,10 @@ $(function() {
         menu.find('nav ul').append(`
             <li>
                 <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
-                <a href="${data.link}" class="designer-name">${data.title}</a>
+                <a href="${data.link}" class="designer-name">
+                    <span>${data.title}</span>
+                    <span style="">${data.title}</span>
+                </a>
             </li>
         `);
     }

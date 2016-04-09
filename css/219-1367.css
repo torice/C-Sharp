@@ -85,21 +85,24 @@ body {
     padding: 10px 80px 35px 80px;
 }
 
+.intro {
+    font-size: 10px;
+}
+
 header {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 50%;
     z-index: 4;
     display: block;
-    margin: 0 0 0 -190px;
+    margin: 0 0 0 -11.5em;
     padding: 0;
-    width: 450px;
-    background: url(../svg/layer-middle.svg) repeat-y center top;
-    background-color: transparent;
-    -moz-background-size: 450px auto;
-    -o-background-size: 450px auto;
-    -webkit-background-size: 450px auto;
-    background-size: 450px auto;
+    width: 23em;
+    background: transparent url(../svg/layer-middle.svg) repeat-y center top;
+    -moz-background-size: 22.5em auto;
+    -o-background-size: 22.5em auto;
+    -webkit-background-size: 22.5em auto;
+    background-size: 22.5em auto;
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -117,7 +120,7 @@ header {
         left: 0;
         z-index: -1;
         display: block;
-        width: 450px;
+        width: 23em;
         content: '';
     }
 
@@ -125,20 +128,20 @@ header {
         top: -600px;
         height: 600px;
         background: url(../svg/hook3.svg) no-repeat center bottom, url(../svg/layer-frame.svg) no-repeat center 559px;
-        -moz-background-size: 360px auto, 450px auto;
-        -o-background-size: 360px auto, 450px auto;
-        -webkit-background-size: 360px auto, 450px auto;
-        background-size: 360px auto, 450px auto;
+        -moz-background-size: 360px auto, 22.5em auto;
+        -o-background-size: 360px auto, 22.5em auto;
+        -webkit-background-size: 360px auto, 22.5em auto;
+        background-size: 360px auto, 22.5em auto;
     }
 
     header::after {
         bottom: -41px;
         height: 41px;
         background: transparent url(../svg/layer-frame.svg) no-repeat center bottom;
-        -moz-background-size: 450px auto;
-        -o-background-size: 450px auto;
-        -webkit-background-size: 450px auto;
-        background-size: 450px auto;
+        -moz-background-size: 22.5em auto;
+        -o-background-size: 22.5em auto;
+        -webkit-background-size: 22.5em auto;
+        background-size: 22.5em auto;
     }
 
     header:hover {
@@ -151,6 +154,12 @@ header {
         /*transform: rotateY(0) scale(1);*/
     }
 
+    header img {
+        height: 15em;
+        margin: 0 auto;
+        display: block;
+    }
+
 h1,
 h2 {
     position: static;
@@ -158,10 +167,7 @@ h2 {
 }
 
 h1 {
-    margin: 0;
-    padding: 20px 70px;
-    font-size: 40px;
-    line-height: 60px;
+    padding: 0;
 }
 
 h2 {
@@ -491,11 +497,11 @@ footer a::after {
     left: 0;
     margin-top: -280px;
     padding-bottom: 0;
-    -moz-transform: rotateY(15deg);
-    -ms-transform: translate(0, 0);
-    -o-transform: rotateY(15deg);
-    -webkit-transform: rotateY(15deg);
-    transform: rotateY(15deg);
+    /*-moz-transform: rotateY(15deg);*/
+    /*-ms-transform: translate(0, 0);*/
+    /*-o-transform: rotateY(15deg);*/
+    /*-webkit-transform: rotateY(15deg);*/
+    /*transform: rotateY(15deg);*/
 }
 
 .main div[role="article"],
@@ -576,6 +582,10 @@ footer a::after {
 
     .design-selection li {
         width: 380px;
+        overflow: hidden;
+        position: relative;
+        margin-left: 10px;
+        padding: 0;
     }
 
     .design-selection a {
@@ -593,11 +603,13 @@ footer a::after {
 
         .design-selection li a.designer-name {
             position: absolute;
+            display: block;
+            width: 200%;
             top: 23px;
             left: 10px;
             margin-top: 0;
             padding: 0 1px;
-            width: 378px;
+            /*width: 378px;*/
             height: 27px;
             background: #000;
             background: -moz-linear-gradient(top, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
@@ -605,17 +617,23 @@ footer a::after {
             background: -o-linear-gradient(top, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
             background: -webkit-linear-gradient(top,#111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
             background: linear-gradient(to bottom, #111 45%, #111 45%, #111 50%, transparent 50%, transparent 55%, #111 55%, #111 100%);
-            text-indent: 100%;
+            /*text-indent: 100%;*/
             -webkit-text-shadow: 0 0 4px black;
             text-shadow: 0 0 4px black;
             white-space: nowrap;
             font-weight: 900;
+            overflow: hidden;
             font-size: 25px;
             line-height: 25px;
             -moz-animation: marquee 15s infinite linear;
             -o-animation: marquee 15s infinite linear;
             -webkit-animation: marquee 15s infinite linear;
             animation: marquee 15s infinite linear;
+        }
+
+        .design-selection li a.designer-name span {
+            float: left;
+            width: 50%;
         }
 
         .design-selection li:nth-child(2) a.designer-name {
@@ -684,10 +702,10 @@ footer a::after {
         }
 
         .design-selection li a.designer-name:hover {
-            -moz-animation-play-state: paused;
-            -o-animation-play-state: paused;
-            -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+            /*-moz-animation-play-state: paused;*/
+            /*-o-animation-play-state: paused;*/
+            /*-webkit-animation-play-state: paused;*/
+            /*animation-play-state: paused;*/
         }
 
 .design-archives,

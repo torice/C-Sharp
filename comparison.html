@@ -15,33 +15,58 @@
 
     <section class="intro">
         <header role="banner">
-            <h3><img src="img/c.png" alt="C#"></h3>
+            <img src="img/c.png" alt="C#">
             <h1>Comparison</h1>
         </header>
     </section>
 
     <div id="right-key-advance">
         <div id="right-1">
-            <h3>Title 1</h3>
-            <p>
-                Title 1 - P1
-            </p>
-            <p>
-                Title 1 - P2
-            </p>
+            <h3>Conventions</h3>
+            <ul>
+                <li>
+                    Method names use unique variant of camel case, sometimes referred to as UpperCamelCase.
+<pre>
+// C# method call.
+object.MethodCall();
+
+// Java method call.
+object.methodCall();
+</pre>
+                </li>
+            </ul>
         </div>
 
         <div id="right-2">
-            <h3>Title 2</h3>
-            <p>
-                Title 2 - P1
-            </p>
-            <p>
-                Title 2 - P2
-            </p>
-            <p>
-                Title 2 - P3
-            </p>
+            <h3>Variable Declaration</h3>
+            <ul>
+                <li>
+                    C# is both strongly and weakly typed.
+                </li>
+                <li>
+                    Variables may be explicitly typed:
+<pre>
+string sentence = "Hey dare.";
+</pre>
+                </li>
+                <li>
+                    Variables may also be implicitly typed:
+<pre>
+var sentence = "Hey dare.";
+</pre>
+                </li>
+                <li>
+                    C# conventions suggest the use of 'var' type only when type of object is obvious from the right hand side of assignment.
+<pre>
+// Recommended.
+var sentence = "This is clearly a string.";
+var number = 27;
+
+int var4 = Example.ThisCouldReturnAnything();
+
+</pre>
+                </li>
+            </ul>
         </div>
 
         <div id="right-3">

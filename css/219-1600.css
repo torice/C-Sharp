@@ -6,8 +6,12 @@
 
 /** $header */
 
+.intro {
+    font-size: 15px;
+}
+
 header {
-    top: 80px;
+    top: 50px;
 }
 
 /** $main */
