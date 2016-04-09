@@ -12,13 +12,23 @@ header {
 
 /** $main */
 
-.main div[role="article"] {
+.main div[role="article"],
+#right-key-advance div {
     right: 0;
     -moz-transform: rotateY(-15deg);
     -ms-transform: scale(1);
     -o-transform: rotateY(-15deg);
     -webkit-transform: rotateY(-15deg);
     transform: rotateY(-15deg);
+}
+
+#right-key-advance ul {
+    padding-left: 40px;
+}
+
+#right-key-advance ul li {
+    list-style: initial;
+    display: list-item;
 }
 
 /** $sidebar */
