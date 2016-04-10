@@ -84,18 +84,75 @@ Point myPoint = new Point();
             </ul>
         </div>
 
+
         <div id="right-4">
-            <h3>Misc Features</h3>
+            <h3>Lambda Expressions</h3>
             <ul>
                 <li>
-                    Lambda Expressions
+                    Lambda expressions are powerful anonymous functions
 <pre>
 // Used in Fibonacci.cs example.
 Func<int, int> fib = null;
 fib = p => p > 1 ? fib(p - 2) + fib(p - 1) : p;
 </pre>
                 </li>
-                <li>No tail recursion.</li>
+            </ul>
+        </div>
+
+        <div id="right-5">
+            <h3>Accessors (get, set)</h3>
+            <ul>
+                <li>
+                    Lambda expressions are powerful anonymous functions
+<pre>
+// Setup.
+class Employee {
+    private string name;
+    public string Name {
+        get {
+            return name != null ? name : "NA";
+        }
+    }
+}
+
+// Usage.
+Employee joe = new Employee();
+joe.Name; // Returns "NA".
+</pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-6">
+            <h3>Switch Statement Oddities</h3>
+            <!--<ul>-->
+                <!--<li>No tail recursion.</li>-->
+            <!--</ul>-->
+            <ul>
+                <li>
+                    No fall-through in switch statements (unless you like hacks).
+<pre>
+switch (number) {
+    case 1:
+        Console.WriteLine("OK!");
+        break;
+    case 2:
+        Console.WriteLine("Illegal!");
+        // Missing break, wont compile.
+    case 3:
+        Console.WriteLine("Weird!");
+        goto case 1;
+    case 4: // setup for case 5
+        string s;
+        break;
+    case 5:
+        s = "What just happened?"; // 's' defined in case 4.
+        break;
+    default:
+        break; // Yep even defaults need break.
+}
+</pre>
+                </li>
             </ul>
         </div>
     </div>
