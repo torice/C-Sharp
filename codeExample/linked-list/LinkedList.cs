@@ -28,12 +28,10 @@ public class LinkedList {
         myList2.AddLast("Magical");
         myList2.AddLast("World");
         myList2.printAllNodes();
-
-        Console.ReadLine();
     }
 
     public void printAllNodes() {
-        Node current = head;
+        Node current = this.head;
         while (current != null) {
             Console.WriteLine(current.data);
             current = current.next;
@@ -44,23 +42,23 @@ public class LinkedList {
         Node toAdd = new Node();
 
         toAdd.data = data;
-        toAdd.next = head;
+        toAdd.next = this.head;
 
-        head = toAdd;
+        this.head = toAdd;
     }
 
     public void AddLast(Object data) {
-        if (head == null) {
-            head = new Node();
+        if (this.head == null) {
+            this.head = new Node();
 
-            head.data = data;
-            head.next = null;
+            this.head.data = data;
+            this.head.next = null;
         }
         else {
             Node toAdd = new Node();
             toAdd.data = data;
 
-            Node current = head;
+            Node current = this.head;
             while (current.next != null) {
                 current = current.next;
             }

@@ -5,10 +5,22 @@ using System;
 public class Fibonacci {
 
     static void Main(string[] args) {
-        int n = Int32.Parse(args[0]);
+        if (args.Length != 1) {
+            Console.WriteLine("Exiting... Must provide exactly one argument.");
+            return;
+        }
+
+        int n;
+        bool notNumeric = !int.TryParse(args[0], out n);
+
+        if (notNumeric) {
+            Console.WriteLine("Exiting... Argument must be a number.");
+            return;
+        }
 
         if (n < 0) {
-            throw new ArgumentException("Must be non negative", "n");
+            Console.WriteLine("Exiting... Argument must be non negative.");
+            return;
         }
 
         // Define function 'functionality', In & out types.
