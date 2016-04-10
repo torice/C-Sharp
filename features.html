@@ -25,26 +25,42 @@
         <div id="right-1">
             <h3>Arrays</h3>
             <ul>
+                <li>Numerically indexed starting with 0.</li>
+                <li>For associative arrays use library class (HashMap, Dictionary).</li>
                 <li>All arrays are actually objects. Inherit from Array base class.</li>
+                <li>
+                    Two basic types of arrays:
+<pre>
+// Rectangular array syntax.
+int[,] rectangle =
+    new int[,] { {1, 2}, {3, 4} };
+
+// Jagged array syntax.
+int[][] jagged =
+    { new int[] {1,2}, new int[] {3,4} };
+</pre>
+                </li>
             </ul>
         </div>
 
         <div id="right-2">
             <h3>Constructors</h3>
-            <p>
-                Constructors in C# are similar to constructors in Java.
-            </p>
+            <ul>
+                <li>
+                    Similar to constructors in Java.
 <!-- Note: These can't be indented :/ -->
 <pre>
-// An example of a constructor declaration.
+// Example constructor declaration.
 public Point() {
 
 }
 </pre>
 <pre>
-// An example of a constructor invocation.
+// Example constructor invocation.
 Point myPoint = new Point();
 </pre>
+                </li>
+            </ul>
         </div>
 
         <div id="right-3">
@@ -54,34 +70,33 @@ Point myPoint = new Point();
                     Special methods used to destruct instances of classes.
                 </li>
                 <li>
-                    Invoked when the garbage collector determines that the object is no longer being used.
+                    Only necessary when encapsulation unmanaged resources (windows, files, network connections).
                 </li>
-            </ul>
+                <li>
+                    Invoked when the .NET garbage collector determines that the object is no longer being used.
 <pre>
-// An example of a destructor declaration.
+// Example destructor declaration.
 ~ Point() {
     // Cleanup statements.
 }
 </pre>
+                </li>
+            </ul>
         </div>
 
         <div id="right-4">
-            <h3>Title 4</h3>
-            <p>
-                Title 4 - P1
-            </p>
-            <p>
-                Title 4 - P2
-            </p>
-            <p>
-                Title 4 - P3
-            </p>
-            <p>
-                Title 4 - P4
-            </p>
-            <p>
-                Title 4 - P5
-            </p>
+            <h3>Misc Features</h3>
+            <ul>
+                <li>
+                    Lambda Expressions
+<pre>
+// Used in Fibonacci.cs example.
+Func<int, int> fib = null;
+fib = p => p > 1 ? fib(p - 2) + fib(p - 1) : p;
+</pre>
+                </li>
+                <li>No tail recursion.</li>
+            </ul>
         </div>
     </div>
 
