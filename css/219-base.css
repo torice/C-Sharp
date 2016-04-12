@@ -156,3 +156,33 @@ footer a {
     display: block;
     text-align: center;
 }
+
+#right-key-advance {
+    z-index: 9 !important;
+}
+
+#right-key-advance div.fullscreen {
+    display: block;
+    transform: none;
+    width: 190%;
+    height: 90%;
+    position: absolute;
+    left: -95%;
+    margin-top: 0;
+    top: 5%;
+    background-size: cover;
+    box-sizing: border-box;
+    background: #000;
+    opacity: 0.92;
+    border: 1px solid white;
+}
+
+#right-key-advance div .toggle {
+    content: '-';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+}

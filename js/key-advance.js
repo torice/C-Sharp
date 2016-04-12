@@ -31,6 +31,12 @@ $(function() {
         rightKeyAdvance.find('#right-' + currentId).toggle();
         currentId++;
         rightKeyAdvance.find('#right-' + currentId).toggle();
+
+        if (full) {
+            ensureFull(rightKeyAdvance.find('#right-' + currentId));
+        } else {
+            ensureClosed(rightKeyAdvance.find('#right-' + currentId));
+        }
     }
 
     function previous() {
@@ -41,6 +47,12 @@ $(function() {
         rightKeyAdvance.find('#right-' + currentId).toggle();
         currentId--;
         rightKeyAdvance.find('#right-' + currentId).toggle();
+
+        if (full) {
+            ensureFull(rightKeyAdvance.find('#right-' + currentId));
+        } else {
+            ensureClosed(rightKeyAdvance.find('#right-' + currentId));
+        }
     }
 
 
@@ -52,4 +64,34 @@ $(function() {
     var currentId = minId;
     rightKeyAdvance.find('div').hide();
     rightKeyAdvance.find('#right-' + minId).show();
+
+
+    // Fullscreen setup. ///////////////////////////////////////////////////////////////////////////////////////////////
+    for (var i = 0; i <= maxId; i++) {
+        var div = rightKeyAdvance.find('#right-' + i);
+        div.append('<span class="toggle">+</span>');
+    }
+
+    var full = false;
+
+    function ensureFull(element) {
+        $(element).addClass('fullscreen');
+        $(element).find('.toggle').text('-');
+    }
+
+    function ensureClosed(element) {
+        $(element).removeClass('fullscreen');
+        $(element).find('.toggle').text('+');
+    }
+
+    var toggle = $('#right-key-advance div .toggle');
+    toggle.on('click', function() {
+        if (full) {
+            ensureClosed($(this.parentNode));
+        } else {
+            ensureFull($(this.parentNode));
+        }
+
+        full = !full;
+    });
 });
