@@ -104,15 +104,26 @@ $(function() {
     menu = $('#main-menu');
     for (i = 0; i < mainMenuData.length; i++) {
         data = mainMenuData[i];
-        menu.find('nav ul').append(`
-            <li>
-                <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
-                <a href="${data.link}" class="designer-name">
-                    <span>${data.title}</span>
-                    <span style="">${data.title}</span>
-                </a>
-            </li>
-        `);
+        if (data.presenter === presenters.UNCLAIMED) {
+            menu.find('nav ul').append(`
+                <li>
+                    <a href="${data.link}" class="designer-name">
+                        <span>${data.title}</span>
+                        <span style="">${data.title}</span>
+                    </a>
+                </li>
+            `);
+        } else {
+            menu.find('nav ul').append(`
+                <li>
+                    <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
+                    <a href="${data.link}" class="designer-name">
+                        <span>${data.title}</span>
+                        <span style="">${data.title}</span>
+                    </a>
+                </li>
+            `);
+        }
     }
 
     menu = $('#secondary-menu');
