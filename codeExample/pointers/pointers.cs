@@ -3,7 +3,6 @@ using System;
 class point{
 	static void Main(){
 		pointers();
-		exit(0);
 	}
 
 	public static void pointers(){
@@ -35,7 +34,7 @@ class point{
 
 		Console.WriteLine("--------");
 		Console.WriteLine(a[0]);
-		Console.ReadLine();
+		// Console.ReadLine();
 
 		// Output:
 		//10
