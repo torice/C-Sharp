@@ -14,8 +14,8 @@ $(function() {
             name: 'Shelby Speegle',
             link: 'https://www.linkedin.com/in/ricetrevor'
         },
-        UNCLAIMED: {
-            name: 'Unclaimed',
+        TEAM: {
+            name: 'Team',
             link: ''
         }
     };
@@ -27,9 +27,9 @@ $(function() {
             link: 'history.html'
         },
         {
-            presenter: presenters.SHELBY,
-            title: 'C# Features',
-            link: 'features.html'
+            presenter: presenters.MATT,
+            title: 'C#... Why?',
+            link: 'why.html'
         },
         {
             presenter: presenters.TREVOR,
@@ -37,19 +37,9 @@ $(function() {
             link: 'usage.html'
         },
         {
-            presenter: presenters.MATT,
-            title: 'C#... Why?',
-            link: 'why.html'
-        },
-        {
             presenter: presenters.SHELBY,
-            title: 'Examples of C#',
-            link: 'https://github.com/torice/C-Sharp/tree/develop/codeExample'
-        },
-        {
-            presenter: presenters.MATT,
-            title: 'Resources for C#',
-            link: 'resources.html'
+            title: 'C# Features',
+            link: 'features.html'
         },
         {
             presenter: presenters.SHELBY,
@@ -57,9 +47,14 @@ $(function() {
             link: 'comparison.html'
         },
         {
-            presenter: presenters.UNCLAIMED,
-            title: 'Project Sources',
-            link: 'sources.html'
+            presenter: presenters.TEAM,
+            title: 'Examples of C#',
+            link: 'https://github.com/torice/C-Sharp/tree/develop/codeExample'
+        },
+        {
+            presenter: presenters.TEAM,
+            title: 'Resources',
+            link: 'resources.html'
         },
         {
             presenter: presenters.TREVOR,
@@ -104,26 +99,15 @@ $(function() {
     menu = $('#main-menu');
     for (i = 0; i < mainMenuData.length; i++) {
         data = mainMenuData[i];
-        if (data.presenter === presenters.UNCLAIMED) {
-            menu.find('nav ul').append(`
-                <li>
-                    <a href="${data.link}" class="designer-name">
-                        <span>${data.title}</span>
-                        <span style="">${data.title}</span>
-                    </a>
-                </li>
-            `);
-        } else {
-            menu.find('nav ul').append(`
-                <li>
-                    <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
-                    <a href="${data.link}" class="designer-name">
-                        <span>${data.title}</span>
-                        <span style="">${data.title}</span>
-                    </a>
-                </li>
-            `);
-        }
+        menu.find('nav ul').append(`
+            <li>
+                <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
+                <a href="${data.link}" class="designer-name">
+                    <span>${data.title}</span>
+                    <span style="">${data.title}</span>
+                </a>
+            </li>
+        `);
     }
 
     menu = $('#secondary-menu');
