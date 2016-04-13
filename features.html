@@ -100,24 +100,25 @@ fib = p => p > 1 ? fib(p - 2) + fib(p - 1) : p;
         </div>
 
         <div id="right-5">
-            <h3>Accessors (get, set)</h3>
+            <h3>Properties</h3>
             <ul>
                 <li>
-                    Lambda expressions are powerful anonymous functions
+                    Can be used as if they are public data members, but actually use accessor methods.
 <pre>
-// Setup.
-class Employee {
-    private string name;
-    public string Name {
-        get {
-            return name != null ? name : "NA";
-        }
+// Setup
+class TimePeriod {
+    private double seconds;
+
+    public double Hours {
+        get { return seconds / 3600; }
+        set { seconds = value * 3600; } // 'value' is special keyword.
     }
 }
 
 // Usage.
-Employee joe = new Employee();
-joe.Name; // Returns "NA".
+TimePeriod time = new TimePeriod();
+time.Hours = 24; // Invoke set.
+Console.WriteLine("Time in hours: " + t.Hours); // Invoke get.
 </pre>
                 </li>
             </ul>
@@ -152,6 +153,61 @@ switch (number) {
         break; // Yep even defaults need break.
 }
 </pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-7">
+            <h3>Boxing and Unboxing</h3>
+            <ul>
+                <li>
+                    Value of any type can be treated as an object.
+                </li>
+                <li>
+                    Boxing wraps a value type inside a System.Object and stores it on the heap.
+                </li>
+                <li>
+                    Similar to casting, but without truncation.
+                </li>
+                <li>
+                    Viewed as way to allow value types to temporarily become reference types.
+                </li>
+                <li>
+<pre>
+int i = 123;
+object o = i; // Boxing of i.
+
+o = 123;
+i = (int)o;  // Unboxing.
+</pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-8">
+            <h3>Operator overloading</h3>
+            <ul>
+                <li>
+                    Custom operator actions for reference types.
+<pre>
+// Overload + operator to add two Box objects.
+public static Box operator+ (Box b, Box c) {
+    Box box = new Box();
+    box.length = b.length + c.length;
+    box.breadth = b.breadth + c.breadth;
+    box.height = b.height + c.height;
+    return box;
+}
+</pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-9">
+            <h3>Some notes</h3>
+            <ul>
+                <li>
+                    Can switch on strings
                 </li>
             </ul>
         </div>
