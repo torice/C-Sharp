@@ -176,6 +176,10 @@ footer a {
     border: 1px solid white;
 }
 
+#right-key-advance div.fullscreen li {
+    padding: 10px;
+}
+
 #right-key-advance div .toggle {
     content: '-';
     position: absolute;
