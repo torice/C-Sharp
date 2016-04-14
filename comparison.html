@@ -107,6 +107,45 @@ this.MethodCall();
         </div>
 
         <div id="right-5">
+            <h3>What c# has "fixed"</h3>
+            <ul>
+                <li>
+                    Can switch on strings.
+                </li>
+                <li>
+                    For loop scoping:
+<pre>
+for(int i = 0; i < 3; i++) {
+    ;
+}
+
+// In c++, 'i' is still accessible at this point.
+// c# decided to fix this.
+</pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-6">
+            <h3>What C# has "broken"</h3>
+            <ul>
+                <li>
+                    For loop scoping:
+<pre>
+// Will compile in c++ but not c#.
+for (int i = 0; i < 3; i++) {
+   int j = 3;
+}
+
+int j = 5;
+
+// C# compiler complains that 'j' has already been defined in the second 'j assignment'.
+</pre>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-7">
             <h3>Runtime environment</h3>
             <ul>
                 <li>
@@ -121,14 +160,14 @@ this.MethodCall();
             </ul>
         </div>
 
-        <div id="right-6">
+        <div id="right-8">
             <h3>Performance</h3>
             <ul>
                 <li>
                     Java and C# are pretty even when it comes to performance.
                 </li>
                 <li>
-                    In certain environments C# will excel due to more efficient implementation of generics.
+                    In certain environments C# will excel specifically due to more efficient implementation of generics.
                 </li>
             </ul>
         </div>
