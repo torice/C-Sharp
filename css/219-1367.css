@@ -581,7 +581,6 @@ footer a::after {
     }
 
     .design-selection li {
-        width: 380px;
         overflow: hidden;
         position: relative;
         margin-left: 10px;

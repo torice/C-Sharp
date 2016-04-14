@@ -32,6 +32,11 @@ $(function() {
             link: 'why.html'
         },
         {
+            presenter: presenters.SHELBY,
+            title: 'Comparisons',
+            link: 'comparison.html'
+        },
+        {
             presenter: presenters.TREVOR,
             title: 'Uses of C#',
             link: 'usage.html'
@@ -40,11 +45,6 @@ $(function() {
             presenter: presenters.SHELBY,
             title: 'C# Features',
             link: 'features.html'
-        },
-        {
-            presenter: presenters.SHELBY,
-            title: 'Comparisons',
-            link: 'comparison.html'
         },
         {
             presenter: presenters.TEAM,
@@ -63,24 +63,24 @@ $(function() {
         }
     ];
 
-    var secondaryMenuData = [
-        {
-            title: 'C# Developer Page',
-            link: 'https://msdn.microsoft.com/en-US/library/kx37x362.aspx'
-        },
-        {
-            title: 'C# Fundamentals',
-            link: 'https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169'
-        },
-        {
-            title: 'Tutorials Point',
-            link: 'http://www.tutorialspoint.com/csharp/'
-        },
-        {
-            title: 'C# Station',
-            link: 'http://www.csharp-station.com/'
-        }
-    ];
+    //var secondaryMenuData = [
+    //    {
+    //        title: 'C# Developer Page',
+    //        link: 'https://msdn.microsoft.com/en-US/library/kx37x362.aspx'
+    //    },
+    //    {
+    //        title: 'C# Fundamentals',
+    //        link: 'https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169'
+    //    },
+    //    {
+    //        title: 'Tutorials Point',
+    //        link: 'http://www.tutorialspoint.com/csharp/'
+    //    },
+    //    {
+    //        title: 'C# Station',
+    //        link: 'http://www.csharp-station.com/'
+    //    }
+    //];
 
     $('#left').append(`
         <div class="wrapper">
@@ -88,10 +88,10 @@ $(function() {
                 <h3>Main Menu:</h3>
                 <nav><ul></ul></nav>
             </div>
-            <div id="secondary-menu" class="design-archives">
-                <h3>Learn More:</h3>
-                <nav><ul></ul></nav>
-            </div>
+            <!--<div id="secondary-menu" class="design-archives">-->
+                <!--<h3>Learn More:</h3>-->
+                <!--<nav><ul></ul></nav>-->
+            <!--</div>-->
         </div>
     `);
 
@@ -110,15 +110,15 @@ $(function() {
         `);
     }
 
-    menu = $('#secondary-menu');
-    for (i = 0; i < secondaryMenuData.length; i++) {
-        data = secondaryMenuData[i];
-        menu.find('nav ul').append(`
-            <li>
-                <a href="${data.link}" target="_new">
-                    ${data.title}
-                </a>
-            </li>
-        `);
-    }
+    //menu = $('#secondary-menu');
+    //for (i = 0; i < secondaryMenuData.length; i++) {
+    //    data = secondaryMenuData[i];
+    //    menu.find('nav ul').append(`
+    //        <li>
+    //            <a href="${data.link}" target="_new">
+    //                ${data.title}
+    //            </a>
+    //        </li>
+    //    `);
+    //}
 });
