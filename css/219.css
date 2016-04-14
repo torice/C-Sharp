@@ -62,3 +62,25 @@
 pre {
     color: #33cc99;
 }
+
+#trooper {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left:-75px;
+    color: red;
+    background: url(../img/trooper.png);
+    height: 250px;
+    width: 150px;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
+
+.flipped {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}

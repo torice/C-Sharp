@@ -63,42 +63,18 @@ $(function() {
         }
     ];
 
-    //var secondaryMenuData = [
-    //    {
-    //        title: 'C# Developer Page',
-    //        link: 'https://msdn.microsoft.com/en-US/library/kx37x362.aspx'
-    //    },
-    //    {
-    //        title: 'C# Fundamentals',
-    //        link: 'https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169'
-    //    },
-    //    {
-    //        title: 'Tutorials Point',
-    //        link: 'http://www.tutorialspoint.com/csharp/'
-    //    },
-    //    {
-    //        title: 'C# Station',
-    //        link: 'http://www.csharp-station.com/'
-    //    }
-    //];
-
     $('#left').append(`
         <div class="wrapper">
             <div id="main-menu" class="design-selection">
                 <h3>Main Menu:</h3>
                 <nav><ul></ul></nav>
             </div>
-            <!--<div id="secondary-menu" class="design-archives">-->
-                <!--<h3>Learn More:</h3>-->
-                <!--<nav><ul></ul></nav>-->
-            <!--</div>-->
         </div>
     `);
 
-    var menu, data, i;
-    menu = $('#main-menu');
-    for (i = 0; i < mainMenuData.length; i++) {
-        data = mainMenuData[i];
+    var menu = $('#main-menu');
+    for (var i = 0; i < mainMenuData.length; i++) {
+        var data = mainMenuData[i];
         menu.find('nav ul').append(`
             <li>
                 <a href="${data.presenter.link}" class="design-name">${data.presenter.name}</a> presents
@@ -110,15 +86,25 @@ $(function() {
         `);
     }
 
-    //menu = $('#secondary-menu');
-    //for (i = 0; i < secondaryMenuData.length; i++) {
-    //    data = secondaryMenuData[i];
-    //    menu.find('nav ul').append(`
-    //        <li>
-    //            <a href="${data.link}" target="_new">
-    //                ${data.title}
-    //            </a>
-    //        </li>
-    //    `);
-    //}
+    // Insert Stormtrooper.
+    var body = $('body');
+    body.append('<div id="trooper"></div>');
+    var trooper = $('#trooper');
+
+    // Trooper movement.
+    var width = body.width();
+    var flipped = false;
+    body.on('mousemove', function(event) {
+        if (!flipped && event.pageX < width / 2) {
+            trooper.addClass('flipped');
+            flipped = true;
+            return;
+        }
+
+        if (flipped && event.pageX > width / 2) {
+            trooper.removeClass('flipped');
+            flipped = false;
+        }
+        console.log('moved');
+    });
 });
