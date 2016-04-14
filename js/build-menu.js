@@ -105,6 +105,5 @@ $(function() {
             trooper.removeClass('flipped');
             flipped = false;
         }
-        console.log('moved');
     });
 });
