@@ -64,6 +64,7 @@ pre {
 }
 
 #trooper {
+    z-index: 9;
     position: fixed;
     bottom: 0;
     left: 50%;
