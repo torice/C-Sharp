@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>C# - a description and history</title>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+	<link rel="stylesheet" media="screen" href="css/219.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Group 8 - Shelby Speegle, Matthew Crosby, Trevor Rice">
+	<meta name="description" content="An explanation of what to use C#.">
+	<meta name="robots" content="none">
+
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/build-menu.js"></script>
+	<script src="js/font-stuff.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<!--Comment-->
+</head>
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+	<section class="intro" id="zen-intro">
+		<!-- Center frame, the image is a fixed size-->
+		<header role="banner">
+			<!--h1>C#</h1-->
+			<a href="index.html"><img src="img/c.png" alt="C#"></a>
+			<!--			<h3><abbr title="Java rebuilt">A history and description</abbr></h3>                -->
+		</header>
+
+		<!--
+			Right hand drop-down frame, this image grows in length as the content grows but width is fixed
+		-->
+		<div class="summary" id="zen-summary" role="article">
+			<p>
+				Our goal is to give you an idea of why C# exists <abbr title="C# because Java needed to be rebuilt!">
+				and the driving force behind why it was created</abbr>. We also want to show you some of the
+				secrets of C# and how you can take advantage of them.
+			</p>
+		</div>
+
+		<!-- Left hand drop-down frame, this image grows in length as the content grows but width is fixed-->
+		<div class="preamble" id="zen-preamble" role="article">
+			<h3>What we've learned</h3>
+			<p>
+				Today we are here to share what we have learned about C#, why J++ no longer exists, and how C# is now
+				Microsoft's magic script for keeping the .net dream alive. We'll also show you some of it's tools,
+				why it was created, and some examples of some C# code. We also expect to give you a glimpse of the feud
+				going on between Sun Systems and Microsoft.
+			</p>
+		</div>
+	</section>
+
+	<!--
+				Right hand fixed frame
+				This content changes every 8 seconds.
+				The Explanation class div loads first along with the first paragraph.
+				After 8 seconds, the first paragraph is replaced with the second paragraph.
+
+				Eight seconds later the Participation class div loads with it's first paragraph.
+				Then the second paragraph loads, and so on.
+
+				Important!: The explanation class only supports the two paragraphs.
+				A third paragraph would load over top of the rest of the content making your
+				your content unreadable.
+	-->
+	<div class="main supporting" id="zen-supporting" role="main">
+		<div class="explanation" id="zen-explanation" role="article">
+			<h3>Uses for C#</h3>
+			<p>
+				Since C# is a managed language, it ensures there aren't any memory leaks. In
+				simple programs, this ensures the performance of the system the application is
+				running on is optimized. For high end programs and applications, this can have
+				a negative impact. For instance, games like Doom 3 and 4 would not work well
+				if the code was written in C#. Enabling unsafe mode can improve calls between
+				managed code. One scenario that requires unsafe mode is in the situation where
+				a developer needs to use pointers.
+			</p>
+			<p>
+				If we take a look at C# from the "30 thousand foot view" we can see that it
+				borrows many concepts from Java, C, and C++. This makes the code look very
+				familiar to most programmers but it was designed to be easier to use with
+				syntax that allows the code itself to basically explain what it is doing. With
+				a built in library containing many preconfigured functions, writing clean,
+				readable, and portable code becomes much easier. With these features in mind
+				and the fact that it is an object oriented language, it makes for an excellent
+				language that can be used in rapid application deployment. RAD is a programming
+				methodology somewhat similar to Agile.
+			</p>
+		</div>
+
+		<div class="participation" id="zen-participation" role="article">
+			<h3>Uses for C#</h3>
+			<p>
+				C# is great for developing games and apps to the Windows App Store. Programs
+				deployed to the App store can be available to both the Windows Operating Systems
+				and the Windows Mobile platform. If you are looking to develop software for multiple
+				platforms, C# could be an excellent choice.
+			</p>
+			<p>
+				C# is also excellent for createing website ans web applications. Microsoft developed
+				Sharepoint in C#, one of the more resent additions to the Microsoft Office Suite.
+				SharePoint is an Enterprise level webbased application. It allows orginizations,
+				departments, and teams to quickly and easily create entire websites in just a few
+				minutes.
+			</p>
+			<p>
+				SharePoint pulls from many resources but the primary power behind it is the .NET
+				Framework. Learn more about the .NET Framework under C# Features.
+			</p>
+		</div>
+
+		<div class="benefits" id="zen-benefits" role="article">
+			<h3>Advantages</h3>
+			<p>
+			<ul>
+				<li>* Automatic garbage collection</li>
+				<li>* Pointers are not required, but are available</li>
+				<li>* Declaration of functions and classes are not needed</li>
+				<li>* Classes can be defined within other classes</li>
+				<li>* No global functions or variables, everything belongs to a class</li>
+				<li>* All variables are automatically initialized to their default values but can be
+				initialized manually using static constructors</li>
+			</p>
+		</div>
+		<div class="requirements" id="zen-requirements" role="article">
+			<h3>Programming</h3>
+			<p>
+				C# can be written in any text editor or IDE but Microsofts Visual Studio natively supports C#.
+			</p>
+			<p>
+				C# Programs can be compiled and ran from within Visual Studio.
+			</p>
+			<p>
+				C# is now fully supported on the Linux platform as well, compiled using Mono.
+			</p>
+			<p>
+				C# uses the .NET Framework Class Library making it very flexible and easy to use.
+			</p>
+			<p>
+				C# is a managed language which keeps it free of memory leaks.
+			</p>
+		</div>
+	<!--
+#
+#			The footer content for this site is the buttons down the right hand side.
+#			We can update these to link to other things we would want to use, such as
+#			reference sites. The github link can link to our github site for our
+#			code repository of examples.
+#
+
+		<footer>
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
+			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
+			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
+		</footer>
+	-->
+	</div>
+
+	<!--
+#
+#			This is the left hand fixed frame.
+#
+-->
+	<div id="left">
+		<!-- Left menu filled in by js. -->
+	</div>
+
+
+</div>
+
+<!--
+
+	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead.
+	These only remain for historical design compatibility. They might go away one day.
+
+-->
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+
+</body>
+</html>
