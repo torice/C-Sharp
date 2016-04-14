@@ -52,11 +52,6 @@ $(function() {
             link: 'https://github.com/torice/C-Sharp/tree/develop/codeExample'
         },
         {
-            presenter: presenters.TEAM,
-            title: 'Resources',
-            link: 'resources.html'
-        },
-        {
             presenter: presenters.TREVOR,
             title: 'GitHub Repo',
             link: 'https://github.com/torice/C-Sharp'
