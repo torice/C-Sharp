@@ -359,6 +359,10 @@ h2 {
         background-size: auto 100%;
     }
 
+    #right-key-advance div li {
+        padding: 5px;
+    }
+
         .main div[role="article"] p {
             position: absolute;
             padding: 10px 0;
