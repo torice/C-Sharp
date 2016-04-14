@@ -26,10 +26,10 @@
             <h3>What C# has "fixed"</h3>
             <ul>
                 <li>
-                    Ability to switch on strings.
+                    Ability to switch on strings (vs. C++, Java).
                 </li>
                 <li>
-                    For loop scoping:
+                    For loop scoping (vs. C++):
 <pre>
 for(int i = 0; i < 3; i++) {
     ;
@@ -64,9 +64,9 @@ int j = 5;
         <div id="right-3">
             <h3>C#, Java Similarities</h3>
             <ul>
-                <li>Support distributed programming.</li>
-                <li>Use intermediate code to achieve safety and portability.</li>
-                <li>Significant amount of runtime error checking, security, and managed execution.</li>
+                <li>Distributed programming.</li>
+                <li>Intermediate code - safety and portability.</li>
+                <li>Runtime error checking, security, and managed execution.</li>
             </ul>
         </div>
 
@@ -83,7 +83,7 @@ int j = 5;
             <h3>Conventions</h3>
             <ul>
                 <li>
-                    Method names use unique variant of camel case, sometimes referred to as UpperCamelCase.
+                    Method names use unique variant of camel case:
 <pre>
 // C# method call.
 object.MethodCall();
@@ -173,22 +173,22 @@ this.MethodCall();
                     Both allow code to be managed at execution time.
                 </li>
                 <li>
-                    Executables are portable due to .NET runtime layer.
+                    Intermediate code is portable due to .NET runtime layer.
                 </li>
             </ul>
         </div>
 
         <div id="right-10">
-            <h3>Performance</h3>
+            <h3>Performance (Java vs. C#)</h3>
             <ul>
                 <li>
-                    Java and C# are pretty even when it comes to performance.
+                    Most sources claim fairly even performance
                 </li>
                 <li>
-                    In certain environments C# will excel specifically due to more efficient implementation of generics, and lamba expressions.
+                    But... In certain environments C# will excel specifically due to more efficient implementation of generics in C#.
                 </li>
                 <li>
-                    In other cases and environments, one might see a C# implementation fall short of its Java counterpart.
+                    Other environments or intensive algorithms will cause a C# implementation to fall short of its Java counterpart due to extra memory management overhead.
                 </li>
             </ul>
         </div>

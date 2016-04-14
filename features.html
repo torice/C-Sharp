@@ -25,11 +25,11 @@
         <div id="right-1">
             <h3>.NET Framework</h3>
             <ul>
-                <li>Developed by Microsoft to support a language-neutral mechanism for exposing their various components.</li>
-                <li>Environment supporting development and execution of distributed, component-based applications.</li>
-                <li>Enables multiple languages to work together using Common Language Runtime.</li>
-                <li>Provides security, program portability, common programming model for Windows platform.</li>
-                <li>C# programs are automatically portable to all .NET environments.</li>
+                <li>Developed by Microsoft to support a language-neutral mechanism for exposing their components.</li>
+                <li>Supports execution of distributed, component-based applications.</li>
+                <li>Multiple languages can work together using Common Language Runtime.</li>
+                <li>Secure, portable, common programming model for Windows platform.</li>
+                <li>Programs are portable to all .NET environments.</li>
             </ul>
         </div>
 
@@ -45,9 +45,9 @@
                         <li>CLR compiles MSIL into executable code as each part of program is needed.</li>
                         <li>During compilation code verification takes place to ensure type safety.</li>
                     </ul>
+                    <img src="img/clr.jpeg" alt=".NET Framework">
                 </li>
             </ul>
-            <img src="img/clr.jpeg" alt=".NET Framework">
         </div>
 
         <div id="right-3">
@@ -64,7 +64,6 @@
                 <li>Modern memory management.</li>
                 <li>Ability to mix language operability.</li>
                 <li>Better security.</li>
-                <li>Clean way for components to interact.</li>
             </ul>
         </div>
 
@@ -73,17 +72,15 @@
             <ul>
                 <li>Numerically indexed starting with 0.</li>
                 <li>For associative arrays use library class (HashMap, Dictionary).</li>
-                <li>All arrays are actually objects. Inherit from Array base class.</li>
+                <li>All arrays are formal objects. Inherit from Array base class.</li>
                 <li>
                     Two basic types of arrays:
 <pre>
 // Rectangular array syntax.
-int[,] rectangle =
-    new int[,] { {1, 2}, {3, 4} };
+int[,] rectangle = new int[,] { {1, 2}, {3, 4} };
 
 // Jagged array syntax.
-int[][] jagged =
-    { new int[] {1,2}, new int[] {3,4} };
+int[][] jagged = { new int[] {1,2}, new int[] {3,4} };
 </pre>
                 </li>
             </ul>
@@ -135,7 +132,10 @@ Point myPoint = new Point();
             <h3>Lambda Expressions</h3>
             <ul>
                 <li>
-                    Lambda expressions are powerful anonymous functions
+                    Lambda expressions are powerful anonymous functions.
+                </li>
+                <li>
+                    Functions that can be passed around like objects and called on demand:
 <pre>
 // Used in Fibonacci.cs example.
 Func<int, int> fib = null;
@@ -231,7 +231,7 @@ i = (int)o;  // Unboxing.
             <h3>Operator overloading</h3>
             <ul>
                 <li>
-                    Custom operator actions for reference types.
+                    Custom operator actions for reference types:
 <pre>
 // Overload + operator to add two Box objects.
 public static Box operator+ (Box b, Box c) {
