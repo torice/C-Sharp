@@ -1,0 +1,19 @@
+***************
+* Group 8
+* Shelby, Matt, Trevor
+* BSU CS354 ~ Programming Languages
+***************
+
+C# Code Examples
+-----------------
+
+Each program can be compiled, run and cleaned using make. To compile
+a program from a bash prompt, just type:
+make
+then press enter. To run the application, type:
+make run
+then press enter. To clean up the files, type:
+make clean
+then press enter.
+
+Each program is just a simple example of different features in C#.
